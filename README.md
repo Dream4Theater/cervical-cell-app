@@ -9,7 +9,7 @@ streamlit hello
 ## Installation of Project
 
 ```bash
-git clone https://github.com/Dream4Theater/corona-detect-v1-streamlit-app
+git clone https://github.com/Dream4Theater/cervical-cell-app
 streamlit run app.py
 ```
 That way u can easily get source code and run application on your local host.
