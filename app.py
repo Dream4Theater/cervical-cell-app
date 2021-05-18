@@ -23,7 +23,7 @@ def make_prediction(image):
     img = tf.cast(tf.expand_dims(img, axis=0), tf.float32)
 
     preds = model.predict(img)
-    pred_class = class_names[tf.argmax(preds)]
+    pred_class = class_names[tf.argmax(preds[0])]
     pred_conf = tf.reduce_max(preds)
     return image, pred_class, pred_conf
 
@@ -49,5 +49,5 @@ if pred_button:
 
 if session_state.pred_button:
     session_state.image, session_state.pred_class, session_state.pred_conf = make_prediction(session_state.uploaded_image)
-    st.write(f"Prediction: {session_state.pred_class[0]}, \
+    st.write(f"Prediction: {session_state.pred_class}, \
                Confidence: {session_state.pred_conf[0]:.2f}")
