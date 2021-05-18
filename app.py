@@ -51,4 +51,4 @@ if session_state.pred_button:
     session_state.preds = make_prediction(session_state.uploaded_image)
     for names in class_names:
         st.write(f"Prediction: {names}, \
-                Confidence: {tf.reduce_max(session_state.preds[0,class_names.index(names)])}")
+                Confidence: {tf.reduce_max(session_state.preds[0,class_names.index(names)]):.1f}")
