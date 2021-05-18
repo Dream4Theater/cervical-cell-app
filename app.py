@@ -24,7 +24,7 @@ def make_prediction(image):
 
     preds = model.predict(img)
     pred_class = class_names[tf.argmax(preds[0])]
-    pred_conf = tf.reduce_max(preds)
+    pred_conf = tf.reduce_max(preds[0])
     return image, pred_class, pred_conf
 
 # File uploader allows user to add their own image
@@ -50,4 +50,4 @@ if pred_button:
 if session_state.pred_button:
     session_state.image, session_state.pred_class, session_state.pred_conf = make_prediction(session_state.uploaded_image)
     st.write(f"Prediction: {session_state.pred_class}, \
-               Confidence: {session_state.pred_conf[0]:.2f}")
+               Confidence: {session_state.pred_conf:.2f}")
