@@ -49,6 +49,6 @@ if pred_button:
 
 if session_state.pred_button:
     session_state.image, session_state.pred_class, session_state.pred_conf = make_prediction(session_state.uploaded_image)
-    st.write(f"Prediction: {session_state.pred_class}, \
-               Confidence: {session_state.pred_conf:.2f}")
+    st.write(f"**Prediction: {session_state.pred_class}**")
+    st.write(f"**Confidence: {session_state.pred_conf:.2f}**")
                
