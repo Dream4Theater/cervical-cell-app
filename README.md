@@ -20,4 +20,4 @@ If u wanna know how to deploy a project on Streamlit share u should check out [h
 
 ## Conclusion
 
-If u deploy your project to Streamlit, it should be looking like this [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dream4theater/corona-detect-v1-streamlit-app/app.py/)
+If u deploy your project to Streamlit, it should be looking like this [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dream4theater/cervical-cell-app/main/app.py/)
