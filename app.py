@@ -29,7 +29,7 @@ def make_prediction(image):
 
 # File uploader allows user to add their own image
 uploaded_file = st.file_uploader(label="Upload an image",
-                                 type=["bmp"])
+                                 type=["bmp,png,jpg,jpeg"])
 
 #buttuon to trigger prediction
 session_state = SessionState.get(pred_button=False)
