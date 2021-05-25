@@ -17,7 +17,7 @@ st.title("Diagnostic Classification of Cervical Cell Images")
 @st.cache # cache the function so predictions aren't always redone (Streamlit refreshes every click)
 def make_prediction(image):
 
-    img = tf.image.decode_bmp(image, channels=3)
+    img = tf.image.decode_image(image, channels=3)
     img = tf.image.resize(img,[224,224])
     img /= 255.
     img = tf.cast(tf.expand_dims(img, axis=0), tf.float32)
